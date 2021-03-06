@@ -296,6 +296,22 @@ public class HomePageTest extends HomePageNew {
         Assert.assertEquals(actualText, expectedText, "Amazon coupon not displaying properly.");
     }
 
+    @Test
+    public void testNewReleasesAppliancesProdcut2() throws InterruptedException {
+        navigateToNewReleasesAppliances();
+        String expectedText = "Replacement Ice Maker Filter ICE2 F2WC9I1 (2-Pack)";
+        String actualText = driver.findElement(By.cssSelector("#zg-ordered-list > li:nth-child(2) > span > div > span > a > div")).getText();
+        Assert.assertEquals(actualText, expectedText, "Appliances product not displaying properly.");
+    }
+
+    @Test
+    public void testNewReleasesAppliancesProdcut3() throws InterruptedException {
+        navigateToNewReleasesAppliances();
+        String expectedText = "Replacement for Ice Maker Water Filter Whirlpool F2WC9I1 ICE2 for 50 Pound Ice Machines - 2-pack";
+        String actualText = driver.findElement(By.cssSelector("#zg-ordered-list > li:nth-child(3) > span > div > span > a > div")).getText();
+        Assert.assertEquals(actualText, expectedText, "Appliances product not displaying properly.");
+    }
+
 
 
 

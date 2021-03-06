@@ -37,8 +37,11 @@ public class HomePageNew {
         driver.findElement(By.linkText("Customer Service")).click();
     }
 
-    public void bestSellers() {
-
+    public void navigateToNewReleasesAppliances() throws InterruptedException {
+        driver.findElement(By.linkText("New Releases")).click();
+        Thread.sleep(500);
+        driver.findElement(By.linkText("Appliances")).click();
+        Thread.sleep(2000);
     }
 
     @Test()
